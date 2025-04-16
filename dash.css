@@ -1,0 +1,207 @@
+:root {
+    --blue: #007BFF;
+    --light-blue: #E9F3FF;
+    --white: #fff;
+    --gray: #f4f4f4;
+    --dark-text: #333;
+  }
+  /* From Uiverse.io by Juanes200122 */ 
+.container1 {
+    width: 100%;
+    height: 100%;
+    /* Add your background pattern here */
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--gray);
+    color: var(--dark-text);
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar h2 {
+    color: var(--blue);
+    font-size: 24px;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--blue);
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: var(--dark-text);
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: var(--light-blue);
+    color: var(--blue);
+  }
+  
+  /* Main */
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .topbar h1 {
+    font-size: 22px;
+    color: var(--blue);
+  }
+  
+  .hamburger {
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    color: var(--blue);
+  }
+  
+  .content-area {
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Chatbot */
+  .chat-section {
+    width: 350px;
+    background-color: var(--white);
+    border-left: 2px solid var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .chat-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--light-blue);
+    background-color: var(--light-blue);
+    border-radius: 20px 0 0 0;
+  }
+  
+  .chat-body {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .message {
+    background-color: var(--light-blue);
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 80%;
+  }
+  
+  .chat-input {
+    padding: 15px;
+    display: flex;
+    border-top: 1px solid var(--light-blue);
+    gap: 10px;
+    border-radius: 0 0 0 20px;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .chat-input button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      transform: translateX(-100%);
+      z-index: 999;
+    }
+  
+    .sidebar.visible {
+      transform: translateX(0);
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .chat-section {
+      display: none;
+    }
+  
+    .main-content {
+      width: 100%;
+    }
+  }
+  

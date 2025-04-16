@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>dAIgnose Dashboard</title>
+  <link rel="stylesheet" href="dash.css" />
+</head>
+<body>
+    <div class="container1">
+        <div class="container">
+            <!-- Sidebar -->
+            <aside class="sidebar hidden" id="sidebar">
+              <div class="sidebar-header">
+                <h2>dAIgnose</h2>
+                <button id="closeSidebar" class="close-btn">&times;</button>
+              </div>
+              <nav class="nav-links">
+                <a href="#">Dashboard</a>
+                <a href="#">Appointments</a>
+                <a href="#">Records</a>
+                <a href="#">Messages</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+              </nav>
+            </aside>
+        
+            <!-- Main Section -->
+            <main class="main-content">
+                <div class="container"></div>
+              <header class="topbar">
+                <button id="openSidebar" class="hamburger">&#9776;</button>
+                <h1>Welcome to dAIgnose</h1>
+              </header>
+        
+              <section class="content-area">
+                <div class="card">
+                  <p>This is your personalized dashboard space. Here you’ll see all updates, medical records, and appointments.</p>
+                </div>
+              </section>
+            </main>
+        
+            <!-- Chatbot Section -->
+            <section class="chat-section">
+              <div class="chat-header">
+                <h3>AI Assistant</h3>
+              </div>
+              <div class="chat-body">
+                <div class="message bot">Hi! How can I help you today?</div>
+                <!-- User messages would be dynamically inserted here -->
+              </div>
+              <div class="chat-input">
+                <input type="text" placeholder="Type your message..." />
+                <button>Send</button>
+              </div>
+            </section>
+          </div>
+    </div>
+
+  
+
+  <script src="dash.js"></script>
+</body>
+</html>
