@@ -33,20 +33,52 @@
   
   .logo {
     position: relative;
-    top: -17px;
-    left: -113px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    height: 56px;
-    width: 60px;
-
+    height: 72px;
+    width: 164px;
+    cursor: pointer;
   }
   .logo1{
-    height:200%;
-    width: 250%;
-    mix-blend-mode: white;
+    height:100%;
+    width: 100%;
   }
   
+  .Meet-daignose{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-button {
+  display: block;
+  margin: 30px auto 0;
+  background-color: #004d66;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main-button:hover {
+  background-color: #007a99;
+}
+
+.image1{
+  height: 389px;
+  width: 400px;
+  margin: 55px;
+  border-radius: 10px;
+}
   .hamburger {
     display: none;
     font-size: 1.5rem;
@@ -66,19 +98,236 @@
   .account-option a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
-    margin-left: 1rem;
-  }
+    margin: 2px 8px;
+    padding: 8px 8px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.nav-links nav a:hover,
+.account-option a:hover {
+  background-color: white;
+  color: #0a0a0a;
   
+}
+
   main {
     padding: 2rem;
     min-height: 60vh;
   }
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 80px 20px;
+  min-height: 100vh;
+  color: #003344;
+  border-radius: 20px;
+  margin: 25px 15px;
+}
+
+.home-content {
+  max-width: 600px;
+  margin-left: 18px;
+}
+
+.home h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #004d66;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: #005c72;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.sub-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.home-details {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.main-button {
+  background-color: #004d66;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.main-button:hover {
+  background-color: #007a99;
+}
+
+.image-container {
+  max-width: 550px;
+  text-align: center;
+}
+
+.image1 {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.services-section {
+  background-color: #f4f4f4;
+  padding: 80px 20px;
+  text-align: center;
+  height: 790px;
+  border-radius: 20px;
+  margin: 25px 15px;
+}
+
+.services-intro {
+  font-size: 18px;
+  color: #2a4d69;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #2a4d69;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #7a7a7a;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-card img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #555555;
+}
+
+.faq-section {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  color: #003344;
+  border-radius: 20px;
+  margin: 25px 15px;
+}
+
+.faq-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-section .section-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #004d66;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-section .section-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #003344;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.faq-item a {
+  color: #004d66;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.faq-item a:hover {
+  text-decoration: underline;
+}
+
   
   footer {
-    background-color: #f5f5f5;
+    background-color: #333333;
     padding: 2rem;
-    color: #555;
+    color: #ffffff;
   }
   
   .footer-content {
@@ -90,17 +339,30 @@
   .footer-content div {
     flex: 1 1 200px;
     margin: 0.5rem;
+    line-height: 24px;
   }
   
-  .external-links a {
-    display: block;
-    color: var(--primary-color);
-    text-decoration: none;
-    margin-top: 0.5rem;
+  .external-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  .external-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  .external-links ul{
+    display: flex;
+  }
+  .external-links ul li ::marker{
+    margin: 0;
+  }
+  
+
   
   /* Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     .hamburger {
       display: block;
     }
