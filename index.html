@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  
+
   <header>
     <section class="nav-bar">
       <div class="logo">
-        <img class="logo1"src="logo-removebg-preview.png" alt="Company logo">
+        <img class="logo1" src="./assets/logo2.png" alt="Company logo">
       </div>
 
       <button class="hamburger" id="hamburger">&#9776;</button>
@@ -22,6 +22,7 @@
           <a href="#services">Services</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
+          <a href="#FAQ">FAQ</a>
         </nav>
         <div class="account-option">
           <a href="#login">Login</a>
@@ -32,17 +33,107 @@
   </header>
 
   <main>
+
     <section class="home">
+      <div class="home-content">
         <h1>Welcome to dAIgnose</h1>
-        <p>Your trusted partner in wellness and medical care.</p>
+        <p class="intro-text">Your trusted partner in wellness and medical care.</p>
+        <p class="sub-text">Take control of your health with personalized, expert care, tailored for you.</p>
+        <p class="home-details">
+          At dAIgnose, we utilize advanced medical technology and the expertise of our healthcare professionals to provide accurate diagnoses, prompt treatments, and comprehensive care. Whether you're seeking preventive care or addressing specific health concerns, we are here to guide you on your journey to better health.
+        </p>
+        <button class="main-button">Let's Start</button>
+      </div>
+      <div class="image-container">
+        <img class="image1" src="medimage.webp" alt="Medical Professionals">
+      </div>
     </section>
+    
+      
+      <section class="services-section">
+        <div class="container">
+          <h2 class="section-title">Our Healthcare Services</h2>
+          <p class="section-subtitle">Comprehensive care tailored to your needs</p>
+          <p class="services-intro">
+            At dAIgnose, we believe in providing personalized healthcare services that cater to your unique needs. Our team of expert professionals is dedicated to delivering accurate diagnoses and treatment plans, ensuring your health and well-being are in the best hands. Whether you need a routine check-up or urgent care, we are here to support you every step of the way.
+          </p>
+          
+          
+          <div class="services-grid">
+            <div class="service-card">
+              <img src="icons/doctor.svg" alt="General Consultation">
+              <h3>General Consultation</h3>
+              <p>Get expert advice from our qualified doctors for all your general health concerns.</p>
+            </div>
+                        
+            
+            <div class="service-card">
+              <img src="icons/lab.svg" alt="Lab Tests">
+              <h3>Lab Tests</h3>
+              <p>Accurate and quick lab testing services for a wide range of health conditions.</p>
+            </div>
+            
+            <div class="service-card">
+              <img src="icons/heart.svg" alt="Cardiology">
+              <h3>Cardiology</h3>
+              <p>Advanced heart care with state-of-the-art diagnostics and treatment options.</p>
+            </div>
+            
+            <div class="service-card">
+              <img src="icons/emergency.svg" alt="Emergency Care">
+              <h3>Emergency Care</h3>
+              <p>24/7 emergency services to handle urgent medical needs with care and speed.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="faq-section" id="FAQ">
+        <div class="container">
+          <h2 class="section-title">Frequently Asked Questions (FAQ)</h2>
+          <p class="section-subtitle">Here are some common questions and answers about our healthcare services.</p>
+      
+          <div class="faq-item">
+            <h3>What types of services does dAIgnose provide?</h3>
+            <p>At dAIgnose, we offer a wide range of healthcare services, including general consultations, lab tests, cardiology services, and emergency care. Our expert team is dedicated to providing personalized care for your health needs.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h3>How can I book an appointment?</h3>
+            <p>Booking an appointment is easy! You can visit our "Book Appointment" page, choose a suitable time, and schedule your consultation with one of our healthcare professionals. You can also call our support team for assistance.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h3>Are your doctors certified and experienced?</h3>
+            <p>Yes, all of our doctors are highly trained, certified, and have years of experience in their respective fields. Our team is dedicated to providing the highest quality care using the latest medical technologies.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h3>What should I do in case of a medical emergency?</h3>
+            <p>If you're experiencing a medical emergency, please immediately contact our 24/7 emergency care hotline. Our experienced medical team will be ready to provide urgent assistance and support.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h3>How can I contact customer support?</h3>
+            <p>You can reach our customer support team by emailing us at <a href="mailto:daignose.contact@gmail.com">daignose.contact@gmail.com</a>, or by calling our support line (coming soon).</p>
+          </div>
+      
+          <div class="faq-item">
+            <h3>Do you accept insurance?</h3>
+            <p>Yes, we accept a variety of insurance plans. Please contact us to confirm if your insurance provider is included in our network. We aim to make healthcare accessible and affordable for everyone.</p>
+          </div>
+        </div>
+      </section>
+      
+      
+    
   </main>
 
   <footer>
     <section class="footer-content">
       <div>
         <h3>About Us</h3>
-        <p>HealthCare+ is committed to providing quality care and medical solutions.</p>
+        <p>dAIgnose is committed to providing quality care and medical solutions.</p>
       </div>
       <div>
         <h3>Quick Links</h3>
@@ -52,13 +143,17 @@
       </div>
       <div>
         <h3>Contact</h3>
-        <p>Email: support@healthcare.com</p>
-        <p>Phone: +1 234 567 890</p>
+        <p>Email: <a href="daignose.contact@gmail.com">daignose.contact@gmail.com</a></p>
+        <p>Phone: Comming Soon </p>
       </div>
     </section>
     <div class="external-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
+      <p>&#169; 2025 dAIgnose </p>
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
     </div>
   </footer>
 <script src="app.js"></script>
