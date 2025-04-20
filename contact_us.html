@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact_us.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" maxlength="50" pattern="[A-Za-z\s]+" title="Please enter only letters and spaces.">
+            </div>
+            <div class="form-group">
+                <label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" id="mobile" name="mobile" maxlength="10" pattern="\d{10}" title="Please enter a valid 10-digit mobile number.">
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <div class="contact-info">
+            <p>For inquiries, email us at: <a href="mailto:diagnose.contact@gmail.com">diagnose.contact@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
